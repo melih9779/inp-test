@@ -34,9 +34,12 @@
 //function
 switchAccordion = function(e) {
 	let b = 0;
-	for (let a = 0; a <= 499322999; a++) {
-		b = a;
-	};
+	console.log(e.target.hash);
+	if (e.target.hash == "#accordion1"){
+		for (let a = 0; a <= 499322999; a++) {
+			b = a;
+		};
+	}
   console.log("triggered");
 	e.preventDefault();
 	var thisAnswer = e.target.parentNode.nextElementSibling;
